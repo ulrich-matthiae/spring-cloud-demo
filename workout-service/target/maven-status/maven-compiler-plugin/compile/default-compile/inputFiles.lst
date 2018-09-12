@@ -1,0 +1,9 @@
+/run/media/ulrich/dev/dev/sandbox/spring-cloud-demo/workout-service/src/main/java/com/ulrich/matthiae/spring/clouddemo/workout/clients/weather/WeatherServiceClient.java
+/run/media/ulrich/dev/dev/sandbox/spring-cloud-demo/workout-service/src/main/java/com/ulrich/matthiae/spring/clouddemo/DataLoader.java
+/run/media/ulrich/dev/dev/sandbox/spring-cloud-demo/workout-service/src/main/java/com/ulrich/matthiae/spring/clouddemo/workout/WorkoutController.java
+/run/media/ulrich/dev/dev/sandbox/spring-cloud-demo/workout-service/src/main/java/com/ulrich/matthiae/spring/clouddemo/workout/WorkoutRepository.java
+/run/media/ulrich/dev/dev/sandbox/spring-cloud-demo/workout-service/src/main/java/com/ulrich/matthiae/spring/clouddemo/workout/clients/weather/Weather.java
+/run/media/ulrich/dev/dev/sandbox/spring-cloud-demo/workout-service/src/main/java/com/ulrich/matthiae/spring/clouddemo/workout/model/Workout.java
+/run/media/ulrich/dev/dev/sandbox/spring-cloud-demo/workout-service/src/main/java/com/ulrich/matthiae/spring/clouddemo/workout/model/WorkoutType.java
+/run/media/ulrich/dev/dev/sandbox/spring-cloud-demo/workout-service/src/main/java/com/ulrich/matthiae/spring/clouddemo/WorkoutServiceApplication.java
+/run/media/ulrich/dev/dev/sandbox/spring-cloud-demo/workout-service/src/main/java/com/ulrich/matthiae/spring/clouddemo/workout/model/Intensity.java

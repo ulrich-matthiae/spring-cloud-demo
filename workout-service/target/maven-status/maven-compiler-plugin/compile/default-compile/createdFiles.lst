@@ -1,0 +1,9 @@
+com/ulrich/matthiae/spring/clouddemo/workout/model/WorkoutType.class
+com/ulrich/matthiae/spring/clouddemo/WorkoutServiceApplication.class
+com/ulrich/matthiae/spring/clouddemo/workout/WorkoutController.class
+com/ulrich/matthiae/spring/clouddemo/workout/clients/weather/WeatherServiceClient.class
+com/ulrich/matthiae/spring/clouddemo/workout/model/Workout.class
+com/ulrich/matthiae/spring/clouddemo/workout/model/Intensity.class
+com/ulrich/matthiae/spring/clouddemo/workout/WorkoutRepository.class
+com/ulrich/matthiae/spring/clouddemo/workout/clients/weather/Weather.class
+com/ulrich/matthiae/spring/clouddemo/DataLoader.class

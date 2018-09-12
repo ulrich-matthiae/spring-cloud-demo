@@ -24,7 +24,7 @@ public class WorkoutController {
         this.weatherServiceClient = weatherServiceClient;
     }
 
-    @RequestMapping(method = POST, value = "localhost:8201/workouts")
+    @RequestMapping(method = POST, value = "/workouts")
     public ResponseEntity<?> createWorkout(@RequestBody Workout workout) {
         Weather currentWeather = weatherServiceClient.getCurrentWeather();
         workout.setTemperatureCelcius(currentWeather.getTemperatureCelcius());
