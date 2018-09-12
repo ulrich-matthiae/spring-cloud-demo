@@ -33,6 +33,8 @@ public class Workout {
 
     private Integer humidityPercentage;
 
+    private Integer portNumber;
+
     public Workout(Integer userId, LocalDateTime completionDate, WorkoutType workoutType, Duration duration, Intensity intensity, Integer caloriesBurned, Double temperatureCelcius, Integer humidityPercentage) {
         this.userId = userId;
         this.completionDate = completionDate;

@@ -29,6 +29,7 @@ public class WorkoutController {
         Weather currentWeather = weatherServiceClient.getCurrentWeather();
         workout.setTemperatureCelcius(currentWeather.getTemperatureCelcius());
         workout.setHumidityPercentage(currentWeather.getHumidityPercentage());
+        workout.setPortNumber(currentWeather.getPortNumber());
 
         Workout createdWorkout = workoutRepository.save(workout);
         return ResponseEntity.created(URI.create("/workouts/" + createdWorkout.getId())).build();
