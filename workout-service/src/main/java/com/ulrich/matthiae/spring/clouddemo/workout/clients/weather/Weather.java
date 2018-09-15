@@ -1,9 +1,7 @@
 package com.ulrich.matthiae.spring.clouddemo.workout.clients.weather;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.boot.web.server.LocalServerPort;
 
 @Data
 @NoArgsConstructor

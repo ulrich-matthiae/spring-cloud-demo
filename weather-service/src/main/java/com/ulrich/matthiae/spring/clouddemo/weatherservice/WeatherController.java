@@ -1,5 +1,6 @@
 package com.ulrich.matthiae.spring.clouddemo.weatherservice;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.ulrich.matthiae.spring.clouddemo.weatherservice.models.Weather;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -23,13 +24,18 @@ public class WeatherController {
     }
 
     @RequestMapping(value = "/current", method = RequestMethod.GET)
+    @HystrixCommand(fallbackMethod = "fetchDefaultWeather")
     public Weather getCurrentWeather() {
         LocalDateTime now = LocalDateTime.now();
 
         BigDecimal temperatureCelcius = new BigDecimal(now.getSecond() / 1.5D).setScale(1, RoundingMode.HALF_UP);
         int humidityPercentage = now.getMinute();
-        String localServerPort = environment.getProperty("local.server.port");
+        Integer localServerPort = Integer.parseInt(environment.getProperty("local.server.port"));
 
         return new Weather(temperatureCelcius.doubleValue(), humidityPercentage, localServerPort);
+    }
+
+    private Weather fetchDefaultWeather() {
+        return new Weather(25.0, 50, 0);
     }
 }
