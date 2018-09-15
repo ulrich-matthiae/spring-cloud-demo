@@ -4,10 +4,10 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(name = "weather-service")
+@FeignClient(name = "zuul-server")
 @RibbonClient(name = "weather-service")
 public interface WeatherServiceClient {
 
-    @GetMapping("/weather/current")
+    @GetMapping("/weather-service/weather/current")
     Weather getCurrentWeather();
 }

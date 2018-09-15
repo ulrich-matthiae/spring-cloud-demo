@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.net.URI;
+import java.time.LocalDateTime;
 
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
@@ -27,9 +28,11 @@ public class WorkoutController {
     @RequestMapping(method = POST, value = "/workouts")
     public ResponseEntity<?> createWorkout(@RequestBody Workout workout) {
         Weather currentWeather = weatherServiceClient.getCurrentWeather();
+
         workout.setTemperatureCelcius(currentWeather.getTemperatureCelcius());
         workout.setHumidityPercentage(currentWeather.getHumidityPercentage());
         workout.setPortNumber(currentWeather.getPortNumber());
+        workout.setCompletionDate(LocalDateTime.now());
 
         Workout createdWorkout = workoutRepository.save(workout);
         return ResponseEntity.created(URI.create("/workouts/" + createdWorkout.getId())).build();

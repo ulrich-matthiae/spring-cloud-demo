@@ -11,6 +11,7 @@
 		<module>workout-service</module>
 		<module>weather-service</module>
 		<module>eureka-server</module>
+		<module>zuul-server</module>
 	</modules>
     <packaging>pom</packaging>
 
