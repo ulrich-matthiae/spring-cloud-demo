@@ -6,5 +6,6 @@ A simple demo illustrating some of the functionality available on spring cloud, 
 * Ribbon load balancing
 * Eureka service registry
 * Zuul API gateway
+* Hysterix fault tolerance
 
  **The Spring reference documentation can be found [here](http://cloud.spring.io/spring-cloud-netflix/single/spring-cloud-netflix.html)**
